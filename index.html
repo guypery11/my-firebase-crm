@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>firebase exe1</title>
+    <script src="https://www.gstatic.com/firebasejs/11.9.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.9.1/firebase-firestore-compat.js"></script>
+  </head>
+
+  <body>
+    <h1> אפלקציית CRM </h1><h1>
+    <h2>הכנס נתונים</h2>
+
+    <br />
+    <form id="my_form" onsubmit="return false" method="dialog">
+      <label for="leadtype">סוג הליד</label>
+      <input type="text" name="leadtype" required />
+      <br />
+      <label for="leaddate">תאריך הליד</label>
+      <input type="date" name="leaddate" required />
+      <br />
+      <label for="followupdate">תאריך מעקבליד</label>
+      <input type="date" name="followupdate" required />
+      <br />
+      <label for="sumdeal">סכום עסקה </label>
+      <input type="number" name="sumdeal" required />
+      <br />
+      
+
+
+      <input type="submit" value="שלח" />
+    </form>
+  </body>
+
+  <script defer src="./js/main.js"></script>
+</html>
